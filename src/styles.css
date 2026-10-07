@@ -3405,6 +3405,10 @@ body {
 }
 
 @media (max-width: 760px) {
+  .ambient-treats {
+    z-index: 1;
+  }
+
   .hero-copy {
     display: flex;
     flex-direction: column;
@@ -3441,23 +3445,7 @@ body {
 
   .hero-visual .hero-seal,
   .hero-visual .hero-fact {
-    position: relative;
-    inset: auto;
-    margin: 0;
-  }
-
-  .hero-visual .hero-seal {
-    grid-column: 1;
-    grid-row: 2;
-    width: 64px;
-    height: 64px;
-    animation: none;
-  }
-
-  .hero-visual .hero-fact {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: start;
+    display: none;
   }
 }
 
