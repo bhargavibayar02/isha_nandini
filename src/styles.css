@@ -3403,3 +3403,79 @@ body {
     margin: 3px auto;
   }
 }
+
+@media (max-width: 760px) {
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .hero-copy .hero-kannada,
+  .hero-copy h1,
+  .hero-copy > p:not(.hero-kannada),
+  .hero-actions,
+  .district-tag {
+    margin: 0;
+  }
+
+  .hero-visual {
+    display: grid;
+    min-height: 0;
+    grid-template-columns: 72px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: center;
+    gap: 12px;
+  }
+
+  .nandini-emblem-stage {
+    grid-column: 1 / -1;
+    width: min(350px, 100%);
+    animation: none;
+  }
+
+  .hero-visual > .floating-ice {
+    display: none;
+  }
+
+  .hero-visual .hero-seal,
+  .hero-visual .hero-fact {
+    position: relative;
+    inset: auto;
+    margin: 0;
+  }
+
+  .hero-visual .hero-seal {
+    grid-column: 1;
+    grid-row: 2;
+    width: 64px;
+    height: 64px;
+    animation: none;
+  }
+
+  .hero-visual .hero-fact {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
+
+  .hero-copy {
+    gap: 10px;
+  }
+
+  .hero-visual {
+    gap: 10px;
+  }
+
+  .nandini-emblem-stage {
+    width: min(300px, 100%);
+  }
+}
