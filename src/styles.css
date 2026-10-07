@@ -3334,6 +3334,20 @@ body {
     min-height: calc(100vh - 73px);
     min-height: calc(100svh - 73px);
   }
+
+  .hero-grid {
+    gap: 14px;
+  }
+
+  .hero-emblem-orbit,
+  .hero-visual::before,
+  .hero-visual::after {
+    display: none;
+  }
+
+  .hero-visual {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 760px) and (max-height: 740px) {
