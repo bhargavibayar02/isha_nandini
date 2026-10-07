@@ -2816,6 +2816,47 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .loader-core {
+    width: calc(100vw - 32px);
+    max-width: 100%;
+  }
+
+  .loader-logo-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .loader-logo-wrap .brand-lockup {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .loader-logo-wrap .brand-logo-slot {
+    width: clamp(88px, 24vw, 112px);
+    height: clamp(88px, 24vw, 112px);
+    flex: 0 0 clamp(88px, 24vw, 112px);
+    border-radius: 20px;
+  }
+
+  .loader-logo-wrap .brand-copy {
+    min-width: 0;
+    letter-spacing: 0.06em;
+  }
+
+  .loader-logo-wrap .brand-copy strong {
+    font-size: clamp(0.85rem, 5.1vw, 1.2rem);
+    letter-spacing: 0.045em;
+  }
+
+  .loader-logo-wrap .brand-copy small {
+    font-size: clamp(0.43rem, 2.7vw, 0.6rem);
+    letter-spacing: 0.09em;
+  }
+}
+
 .brand-lockup {
   align-items: center;
   gap: 11px;
@@ -3104,5 +3145,247 @@ body {
   .ambient-treat,
   .nandini-cow-artwork img {
     animation: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-section {
+    padding-top: 38px;
+    padding-bottom: 24px;
+  }
+
+  .hero-grid {
+    gap: 0;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(3rem, 10.6vw, 4.6rem);
+    margin: 10px 0;
+  }
+
+  .hero-kannada {
+    margin-top: 13px;
+    margin-bottom: 4px;
+    font-size: 0.98rem;
+  }
+
+  .hero-copy > p:not(.hero-kannada) {
+    margin-top: 10px;
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .hero-actions .button {
+    min-width: 0;
+    min-height: 48px;
+    padding: 0.72rem 0.9rem;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+
+  .district-tag {
+    gap: 7px;
+    margin-top: 16px;
+    padding: 9px 12px;
+  }
+
+  .district-kannada {
+    font-size: 0.72rem;
+  }
+
+  .hero-visual {
+    min-height: 252px;
+    margin-top: 8px;
+  }
+
+  .nandini-emblem-stage {
+    width: min(400px, 88%);
+    min-height: 0;
+    padding: 12px 14px 10px;
+    border-radius: 24px;
+  }
+
+  .nandini-emblem-stage > .nandini-cow-artwork {
+    width: 100%;
+    margin: 6px auto;
+  }
+
+  .hero-seal {
+    width: 70px;
+    height: 70px;
+  }
+
+  .hero-fact {
+    padding: 8px 10px;
+    font-size: 0.56rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 26px;
+    padding-bottom: 15px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.45rem, 10vw, 3.2rem);
+  }
+
+  .hero-copy > p:not(.hero-kannada) {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .hero-actions .button {
+    padding-inline: 0.72rem;
+    font-size: 0.75rem;
+  }
+
+  .district-tag {
+    margin-top: 13px;
+  }
+
+  .hero-visual {
+    min-height: 205px;
+    margin-top: 5px;
+  }
+
+  .nandini-emblem-stage {
+    width: min(350px, 86%);
+    padding: 9px 10px 8px;
+    border-radius: 20px;
+  }
+
+  .emblem-topline {
+    font-size: 0.46rem;
+  }
+
+  .emblem-bottomline {
+    font-size: 0.4rem;
+  }
+}
+
+.hero-section {
+  display: grid;
+  min-height: calc(100vh - 83px);
+  min-height: calc(100svh - 83px);
+  align-items: center;
+}
+
+@media (max-width: 1100px) and (min-width: 761px) {
+  .hero-section {
+    padding-top: 75px;
+    padding-bottom: 63px;
+  }
+}
+
+@media (min-width: 761px) and (max-height: 740px) {
+  .hero-section {
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+
+  .hero-copy h1 {
+    margin: 10px 0;
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+  }
+
+  .hero-copy > p:not(.hero-kannada) {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .hero-actions {
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .hero-actions .button {
+    min-height: 44px;
+    padding-inline: 0.8rem;
+    font-size: 0.78rem;
+  }
+
+  .district-tag {
+    margin-top: 12px;
+    padding: 8px 12px;
+  }
+
+  .hero-visual {
+    min-height: 260px;
+  }
+
+  .nandini-emblem-stage {
+    width: min(360px, 92%);
+    min-height: 0;
+    padding: 12px 14px 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-section {
+    min-height: calc(100vh - 73px);
+    min-height: calc(100svh - 73px);
+  }
+}
+
+@media (max-width: 760px) and (max-height: 740px) {
+  .hero-section {
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+
+  .hero-kannada {
+    margin-top: 7px;
+    margin-bottom: 1px;
+    font-size: 0.9rem;
+  }
+
+  .hero-copy h1 {
+    margin: 5px 0;
+    font-size: 2.15rem;
+  }
+
+  .hero-copy > p:not(.hero-kannada) {
+    margin-top: 7px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .hero-actions {
+    margin-top: 8px;
+  }
+
+  .hero-actions .button {
+    min-height: 42px;
+    padding: 0.55rem 0.6rem;
+    font-size: 0.68rem;
+  }
+
+  .district-tag {
+    margin-top: 8px;
+    padding: 6px 9px;
+  }
+
+  .hero-visual {
+    min-height: 145px;
+    margin-top: 2px;
+  }
+
+  .nandini-emblem-stage {
+    width: min(310px, 82%);
+    padding: 6px 8px;
+  }
+
+  .nandini-emblem-stage > .nandini-cow-artwork {
+    width: min(100%, 255px);
+    margin: 3px auto;
   }
 }
